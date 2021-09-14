@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleStackView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Im-jW-qYD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="358.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iod-Zk-sJn">
+                                        <rect key="frame" x="10" y="5" width="394" height="348.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aHx-kD-q0a">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onepiece06_chopper" translatesAutoresizingMaskIntoConstraints="NO" id="9O8-Iv-bex">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="TwW-fK-Kov"/>
+                                                            <constraint firstAttribute="height" constant="100" id="nw6-dP-0ML"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Xmz-MO-eSb">
+                                                        <rect key="frame" x="110" y="0.0" width="284" height="100"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="トニートニー・チョッパー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2g-ef-O17">
+                                                                <rect key="frame" x="0.0" y="0.0" width="245" height="54"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@chopper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn2-SV-S7C">
+                                                                <rect key="frame" x="0.0" y="54" width="79" height="46"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="niz-po-FV0">
+                                                <rect key="frame" x="0.0" y="100" width="394" height="73"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="drt-sd-zWB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="drt-sd-zWB" secondAttribute="height" multiplier="1:1" id="1CQ-LL-xpI"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-7W-jvu">
+                                                        <rect key="frame" x="80" y="0.0" width="73.5" height="73"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="WE3-7W-jvu" secondAttribute="height" multiplier="1:1" id="ETA-1E-hqU"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="vGi-24-K1f">
+                                                        <rect key="frame" x="160.5" y="0.0" width="73" height="73"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="vGi-24-K1f" secondAttribute="height" multiplier="1:1" id="bqh-kv-GZT"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="lOx-jU-zhR">
+                                                        <rect key="frame" x="240.5" y="0.0" width="73.5" height="73"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="lOx-jU-zhR" secondAttribute="height" multiplier="1:1" id="MIl-dW-11q"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="3uY-hh-K5A">
+                                                        <rect key="frame" x="321" y="0.0" width="73" height="73"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="3uY-hh-K5A" secondAttribute="height" multiplier="1:1" id="NCW-yP-2nG"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UGG-si-hSa">
+                                                <rect key="frame" x="0.0" y="173" width="394" height="175.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">通称：わたあめ大好き チョッパー
+懸賞金：100ベリー
+悪魔の実：ヒトヒトの実
+年齢：17歳
+出身地：偉大なる航路 サクラ王国(旧ドラム王国)
+身長：90cm(人獣型)</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="iod-Zk-sJn" firstAttribute="top" secondItem="1Im-jW-qYD" secondAttribute="top" constant="5" id="AjD-TD-yOV"/>
+                                    <constraint firstAttribute="trailing" secondItem="iod-Zk-sJn" secondAttribute="trailing" constant="10" id="CFg-fg-rxe"/>
+                                    <constraint firstItem="iod-Zk-sJn" firstAttribute="leading" secondItem="1Im-jW-qYD" secondAttribute="leading" constant="10" id="tDs-vh-cqu"/>
+                                    <constraint firstAttribute="bottom" secondItem="iod-Zk-sJn" secondAttribute="bottom" constant="5" id="uCk-Ge-cGY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1Im-jW-qYD" secondAttribute="trailing" id="Cst-Yk-nfs"/>
+                            <constraint firstItem="1Im-jW-qYD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rqa-fV-Edq"/>
+                            <constraint firstItem="1Im-jW-qYD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="iQa-Wy-igC"/>
+                            <constraint firstItem="1Im-jW-qYD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xf2-AS-gg0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="520" y="86"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="onepiece06_chopper" width="496" height="496"/>
+        <image name="star-Yellow" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
